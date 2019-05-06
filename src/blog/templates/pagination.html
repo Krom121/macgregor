@@ -1,0 +1,4 @@
+{% block content %}
+{% if page.has_previous %} Previous 
+{% endif %} Page {{ page.number }} of {{ page.paginator.num_pages }}. {% if page.has_next %} Next {% endif %}
+{% endblock %}

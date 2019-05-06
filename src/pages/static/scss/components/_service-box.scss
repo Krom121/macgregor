@@ -1,0 +1,24 @@
+.service-box{
+    color: $primary-font-color;
+    text-align: center;
+    padding: 1rem;
+
+    &__heading{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    &__list{
+        padding: 1rem;
+    }
+
+    &__item{
+        list-style-type: none;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block header %}
+{% endblock %}
+{% block content %}
+{% if messages %}
+<div class="messages">
+<ul>
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+</div>
+{% endif %}
+
+<div class="row">
+  <img class="post__image" src="{{ post.image.url }}" alt="image-{{ post.title }}">
+  <div class="col-2-of-4">
+<div class="post">
+  <h2 class="post--heading margin-bottom-sm">{{ post.title }}</h2>
+  <p class="post__date">
+    Published {{ post.publish }} by {{ post.author }}
+  </p>
+  <p class="post__content">
+  {{ post.body | safe }}
+ </p>
+  </div>
+
+<div class="post__comments">
+ {% for comment in comments %}
+    <p class="paragraph-2">
+      Comment {{ forloop.counter }} by {{ comment.name }}
+      {{ comment.created }}
+    </p>
+    {{ comment.body|linebreaksbr }}
+ {% empty %}
+  <p class="paragraph-2">There are no comments yet.</p>
+{% endfor %}
+</div>
+<div class="post__total">
+ {% with comments.count as total_comments %}
+  {{ total_comments }} comment{{ total_comments|pluralize }}
+{% endwith %}
+</div>
+{% if new_comment %}
+  <h2 class="paragraph-2">Your comment has been added.</h2>
+{% else %}
+  <h2 class="paragraph-2">Add a new comment</h2>
+  <form action="." method="POST">{% csrf_token %}
+   
+    {{ comment_form}}
+    <input type="submit" value="Add your comment" class="btn btn--green">
+  </form>
+  </div>
+  <div class="col-2-of-4 post__ad">
+     
+    </div>
+  </div>
+  
+{% endif %} 
+{% endblock %}

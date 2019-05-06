@@ -1,0 +1,41 @@
+// main button and animation
+.btn{
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+    }
+    
+    &:hover{
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    }
+    
+    &:active{
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    }
+    
+    &--white{
+        background-color: #fff;
+        color: $secondary-font-color;
+    }
+
+    &--green{
+        text-transform: uppercase;
+        background-color: green;
+        border: none;
+        border-radius: 10rem;
+        color: white;
+        padding: 1.5rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        outline: none;
+    }
+}

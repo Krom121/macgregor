@@ -1,0 +1,16 @@
+.form{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    
+}
+
+label{
+    font-size: 1.5rem;
+    color: $secondary-bg-color; 
+}

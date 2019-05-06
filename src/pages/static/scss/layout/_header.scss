@@ -1,0 +1,21 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to bottom,
+    rgba($color-primary-light, 1), 
+    rgba($color-primary-dark, 0.9)), 
+    url(../img/drawing-banner-home-lg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.header-2{
+    height: 70rem;
+    background-image: linear-gradient(to bottom,
+    rgba($color-primary-light, 0.6), 
+    rgba($color-primary-dark, 0.8)), 
+    url(../img/blog-list-main.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}

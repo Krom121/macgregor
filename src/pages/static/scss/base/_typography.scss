@@ -1,0 +1,169 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.6;
+    
+}
+
+.heading-primary{
+    color: $primary-font-color;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+
+    &--main{
+        display: block;
+        font-size: $large-heading-font-size;
+        font-weight: 500;
+        letter-spacing: 3.5rem;
+        margin-bottom: 4rem;
+        animation: moveInLeft 2s ease-out;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
+    
+       
+    }
+    
+    &--sub{
+        display: block;
+        font-size: $medium-heading-font-size;
+        font-weight: 700;
+        letter-spacing: 1.6rem;
+        animation: moveInRight 2s ease-out;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+            font-size: 3rem;
+        }
+
+       
+    }
+
+    &-blog-main{
+        display: block;
+        font-size: $large-heading-font-size;
+        font-weight: 500;
+        letter-spacing: 2.5rem;
+        margin-bottom: 4rem;
+        animation: moveInLeft 2s ease-out; 
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
+    }
+
+    &-blog-sub{
+        display: block;
+        font-size: $medium-heading-font-size;
+        font-weight: 700;
+        letter-spacing: 1.6rem;
+        animation: moveInRight 2s ease-out;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box-2{
+    margin-left: 1.5rem;
+}
+
+.logo-box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+}
+
+.logo{
+    height: 10rem;
+}
+
+.heading-primary-secondary{
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: $secondary-font-color;
+    text-transform: uppercase;
+
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}
+
+.about-text {
+    font-size: $default-font-size;
+    text-align: center;
+    padding: 1rem;
+}
+
+.about-linebreak{
+    width: 50%;
+    margin: 1.5rem auto;
+}
+
+.heading-primary-thrid{
+    color: $primary-font-color;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}
+
+.heading-primary--fourth{
+    color: $primary-font-color;
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}
+
+.project-heading{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: $secondary-font-color;
+    text-transform: uppercase;
+
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}

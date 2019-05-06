@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+<header class="header-2">
+  <div class="text-box">
+    <h1 class="heading-primary">
+       <span class="heading-primary-blog-main">Latest</span>
+       <span class="heading-primary-blog-sub">Blogs</span>
+    </h1>
+    </div>
+    {% if messages %}
+    <div class="messages">
+    <ul>
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
+</header>
+{% endblock %}
+{% block content %}
+<section class="blog-page">
+<div class="row">
+        <div class="col-2-of-4">
+            <div class="blog-box">
+                {% for post in posts %}
+                <h2 class="blog-box__heading">
+                    <a class="blog-box__link" href="{{ post.get_absolute_url }}">
+                      {{ post.title }}
+                    </a>
+                  </h2>
+                <p class="blog-box__date">
+                    Published {{ post.publish }} by {{ post.author }}
+                </p>
+                  <p class="blog-box__content">
+                  {{ post.body|truncatewords:20|linebreaksbr }}
+                  </p>
+                  <hr class="blog-box__break">
+                {% endfor %}
+                <div class="pagination">
+                    {% include "pagination.html" with page=posts %}
+                  </div>
+              </div>
+      </div>
+      <div class="col-2-of-4">
+          
+      </div>
+      </div>
+</section>
+{% endblock %}
