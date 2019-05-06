@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="about-section">
+        <h2 class="heading-primary-secondary margin-bottom-lg">Who we are</h2>
+    <div class="row">
+        <div class="col-1-of-3">
+            <div class="about-image">
+            <img src="{% static 'img/design-1-350x300.jpg' %}" class="about-image alt="">
+            </div>
+        </div>
+        <div class="col-1-of-3">
+            
+            <p class="about-text">MacGregor Construction is a family run business established by Malcolm MacGregor in 1973.
+                With hard work through the years we built a company that has a great standing in many communities throughout the United Kingdom. 
+                We have seen many changes in the years we have been establish, 
+                the one thing that remains is our passion to build your projects to the high standards we have always been committed too.
+            </p>
+
+            <hr class="about-linebreak">
+
+            <p class="about-text">Always dedicated & devoted.</p>
+        </div>
+        <div class="col-1-of-3">
+            <div class="about-image">
+                <img src="{% static 'img/roofing-350x300.jpg' %}" class="about-image alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p class="about-text">Our main base of stay is the lovely town of Mold, North Wales, where we started all those years ago. 
+            We have grown since then to cover Cheshire, Manchester, Liverpool, London and many more areas. 
+            Where we have been providing highly skilled and vetted tradesmen & tradeswomen with the skills necessary to complete all projects. 
+            No matter how small or large your ideas maybe.
+        </p>
+
+    </div>
+</section>
+<section class="service-section">
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="service-box">
+                <h4 class="service-box__heading margin-bottom-sm">Domestic Construction</h4>
+                <p class="service-box__text">
+                    We provide everything that is needed for your ideas to be come a reality. 
+                    We work with building control, architects, structural engineers, building surveyors. 
+                    To design and build the best solution for you. That is safe, warm and inviting to you and your family. 
+                    From a simple renovation to new builds we are there for you always dedicated & devoted.
+                </p>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <div class="service-box">
+                <h4 class="service-box__heading margin-bottom-sm">Commercial Construction</h4>
+                <p class="service-box__text">
+                    Need your shop or office premises revamped or maybe you need your premises to be brought up to speed with fire and building regulations. 
+                    As we all know you want to keep your customers and staff safe in the event something goes wrong. 
+                    We also help landlords to renovate there premises, so that there tenants are living in the best conditions possible.  
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-box-2">
+        <h4 class="heading-primary-thrid">What we provide:</h4>
+        </div>
+        <div class="service-box">
+            <ul class="service-box__list">
+                <li class="service-box__item">architectural design</li>
+                <li class="service-box__item">Building Control</li>
+                <li class="service-box__item">Ground Works</li>
+                <li class="service-box__item">Structual Works</li>
+                <li class="service-box__item">Bricklaying</li>
+                <li class="service-box__item">Rendering</li>
+                <li class="service-box__item">Electrical installations</li>
+                <li class="service-box__item">Plumbing installations</li>
+                <li class="service-box__item">Plastering</li>
+                <li class="service-box__item">Painting &amp; Decorating</li>
+                <li class="service-box__item">Bathroom Installation</li>
+                <li class="service-box__item">Kitchen Installation</li>
+            </ul>
+            <a class="btn btn--white margin-top-lg" href="{% url 'contact' %}">Get your quotation today</a>
+        </div>
+    </div>
+</section>
+
+<section class="project-section" id="project-section project-modal-1">
+    <h2 class="heading-primary-secondary margin-bottom-lg">Completed construction works</h2>
+    <div class="row">
+       <div class="project-items">
+            <div class="col-1-of-4">
+            <div class="project-item">
+                <img class="project-item__img" src="{% static 'img/new-build-projects-350x300.jpg' %}" alt="house building project">
+                <div class="project-item__overlay">
+                    <div class="project-item__content">
+                        <p class="project-item__text">New Builds &amp; Extensions</p>
+                        <span class="margin-top-sm"><a href="{% url 'project' %}" data-modal="project-modal-1" class="project-item__link open-modal">More Info</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1-of-4">
+            <div class="project-item">
+                <img class="project-item__img" src="{% static 'img/plumber-projects-350x300.jpg' %}" alt="house building project">
+            <div class="project-item__overlay">
+                <div class="project-item__content">
+                    <p class="project-item__text">Plumbing installations</p>
+                    <span class="margin-top-sm"><a href="{% url 'project' %}" data-modal="project-modal-2" class="project-item__link open-modal">More Info</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-1-of-4">
+            <div class="project-item">
+                <img class="project-item__img" id="modalbtn" src="{% static 'img/roofing-350x300.jpg' %}" alt="house building project">
+                <div class="project-item__overlay">
+                    <div class="project-item__content">
+                        <h4 class="project-item__text">Roofing Installation</h4>
+                        <span class="margin-top-sm"><a href="{% url 'project' %}" data-modal="project-modal-3" class="project-item__link open-modal">More Info</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1-of-4">
+            <div class="project-item">
+                <img class="project-item__img" id="modalbtn" src="{% static 'img/electrician-projects-350x300.jpg' %}" alt="house building project">
+                <div class="project-item__overlay">
+                    <div class="project-item__content">
+                        <p class="project-item__text">Electrical installations</p>
+                        <span class="margin-top-sm"><a href="{% url 'project' %}" data-modal="project-modal-4"  class="project-item__link open-modal">More Info</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="blog-section">
+        <h2 class="heading-primary--fourth margin-bottom-lg">Check out our blogs</h2>
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="blog-main">
+                <a href="" class="blog-main__link"><img src="" alt="" class="blog-main__image"></a>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <a href="" class="blog-main__link"><img src="" alt="" class="blog-main__image"></a>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="row">
+    </div>
+</section>
+{% endblock %}
