@@ -1,5 +1,5 @@
 .form{
-    width: 60%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     padding: 2rem;
@@ -7,6 +7,14 @@
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
+
+    @include respond(tab-port){
+        width: 100%;
+    }
+
+    @include respond(phone){
+        width: 100%;
+    }
     
 }
 
