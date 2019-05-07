@@ -670,7 +670,7 @@ label {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(135deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 260%;
   transition: all .7s; }
 .navbar__link:hover, .navbar__link:active {
