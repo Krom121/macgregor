@@ -231,6 +231,12 @@ body {
   top: 50%;
   left: 60%;
   transform: translate(-50%, -50%); }
+  @media (max-width: 56.25em) {
+    .form {
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .form {
+      width: 100%; } }
 
 label {
   font-size: 1.5rem;
@@ -664,9 +670,9 @@ label {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(20deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 360%;
-  transition: all .8s; }
+  background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 260%;
+  transition: all .7s; }
 .navbar__link:hover, .navbar__link:active {
   background-position: 100%;
   color: #344; }
