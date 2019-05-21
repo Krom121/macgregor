@@ -5,3 +5,5 @@ db.sqlite3
 .sass-cache
 mac
 .bash_profile
+config.json
+local_settings
