@@ -1,6 +1,12 @@
 SECRET_KEY='!l0*53@w%q!9rn*j+e1f*&^hn_$)w7&)=4m$$2^*3035==r8dq'
 
 
+DEBUG = True
+
+ALLOWED_HOSTS = []
+
+
+
 
 DATABASES = {
     'default': {
