@@ -152,6 +152,14 @@ body{
     }
 }
 
+.terrainy-heading{
+    color: $secondary-font-color;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: .5rem;
+}
+
 .project-heading{
     font-size: 3rem;
     font-weight: 400;
@@ -166,4 +174,10 @@ body{
     @include respond(phone){
         font-size: 2.5rem;
     }
+}
+
+.quotes-symbol{
+    font-size: 3rem;
+    color: green;
+    padding-right: .2rem;
 }

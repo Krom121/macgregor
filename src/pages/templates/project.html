@@ -1,35 +1,46 @@
 {% extends 'base.html' %}
 {% load static%}
+{% block header %}
+<header class="header-3">
+        <div class="text-box">
+        <h1 class="heading-primary">
+           <span class="heading-primary--main">Macgregor</span>
+           <span class="heading-primary--sub">Our Work</span>
+        </h1>
+        </div>
+        {% if messages %}
+        <div class="messages">
+        <ul>
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    </header>
+{% endblock %}
 {% block content %}
 <section class="project-page">
     <div class="row">
             <h2 class="heading-primary-secondary margin-bottom-lg">New Builds</h2>
     <div class="col-2-of-4">
+        <h4 class="terrainy-heading">From The Ground Up &uHar;</h4>
+        <p class="project-text margin-bottom-xsm">
+        New home family home for the williams family, Their old home was no longer
+        a good fit for their needs as a growing family. And hired us to design and Build
+        the new home they required. The desire was to build a home that utilized the latest
+        technology in energy efficiency.
+        </p>
+        <h4 class="terrainy-heading">Your're In Safe Hands</h4>
+        <p class="project-text margin-bottom-xsm">
+        <span class="quotes-symbol">&#x0201C;</span>
+        From the very start we knew we had made the right choice.
+        The whole team worked hard from the design to construction trust.
+            They even work with building control for us.
+        <span class="quotes-symbol">&#x0201D;</span>
+        </p>
         <p class="project-text">
-            Lorem ipsum dolor, sit amet 
-            consectetur adipisicing elit. Molestiae itaque,
-             voluptate modi consectetur impedit quia incidunt 
-             rerum necessitatibus? Rerum nam cupiditate ipsa 
-             laudantium 
-            aliquam adipisci enim ad autem quo maxime?
-            Lorem ipsum dolor, sit amet 
-            consectetur adipisicing elit. Molestiae itaque,
-             voluptate modi consectetur impedit quia incidunt 
-             rerum necessitatibus? Rerum nam cupiditate ipsa 
-             laudantium 
-            aliquam adipisci enim ad autem quo maxime?
-            Lorem ipsum dolor, sit amet 
-            consectetur adipisicing elit. Molestiae itaque,
-             voluptate modi consectetur impedit quia incidunt 
-             rerum necessitatibus? Rerum nam cupiditate ipsa 
-             laudantium 
-            aliquam adipisci enim ad autem quo maxime?
-            Lorem ipsum dolor, sit amet 
-            consectetur adipisicing elit. Molestiae itaque,
-             voluptate modi consectetur impedit quia incidunt 
-             rerum necessitatibus? Rerum nam cupiditate ipsa 
-             laudantium 
-            aliquam adipisci enim ad autem quo maxime?
+        We work on all projects, no matter what size nor budget.
         </p>
     </div>
     <div class="col-2-of-4">
@@ -42,32 +53,24 @@
         <img class="project-img margin-bottom-lg" src="{% static 'img/kitchen-service.jpg' %}" alt="">
     </div>
     <div class="col-2-of-4">
-        <p class="project-text">
-        Lorem ipsum dolor, sit amet 
-        consectetur adipisicing elit. Molestiae itaque,
-            voluptate modi consectetur impedit quia incidunt 
-            rerum necessitatibus? Rerum nam cupiditate ipsa 
-            laudantium 
-        aliquam adipisci enim ad autem quo maxime?
-        Lorem ipsum dolor, sit amet 
-        consectetur adipisicing elit. Molestiae itaque,
-            voluptate modi consectetur impedit quia incidunt 
-            rerum necessitatibus? Rerum nam cupiditate ipsa 
-            laudantium 
-        aliquam adipisci enim ad autem quo maxime?
-        Lorem ipsum dolor, sit amet 
-        consectetur adipisicing elit. Molestiae itaque,
-            voluptate modi consectetur impedit quia incidunt 
-            rerum necessitatibus? Rerum nam cupiditate ipsa 
-            laudantium 
-        aliquam adipisci enim ad autem quo maxime?
-        Lorem ipsum dolor, sit amet 
-        consectetur adipisicing elit. Molestiae itaque,
-            voluptate modi consectetur impedit quia incidunt 
-            rerum necessitatibus? Rerum nam cupiditate ipsa 
-            laudantium 
-        aliquam adipisci enim ad autem quo maxime?
-        </p>
+            <h4 class="terrainy-heading">From The Ground Up &uHar;</h4>
+            <p class="project-text margin-bottom-xsm">
+            New home family home for the williams family, Their old home was no longer
+            a good fit for their needs as a growing family. And hired us to design and Build
+            the new home they required. The desire was to build a home that utilized the latest
+            technology in energy efficiency.
+            </p>
+            <h4 class="terrainy-heading">Your're In Safe Hands</h4>
+            <p class="project-text margin-bottom-xsm">
+            <span class="quotes-symbol">&#x0201C;</span>
+            From the very start we knew we had made the right choice.
+            The whole team worked hard from the design to construction trust.
+                They even work with building control for us.
+            <span class="quotes-symbol">&#x0201D;</span>
+            </p>
+            <p class="project-text">
+            We work on all projects, no matter what size nor budget.
+            </p>
     </div>
 </div>
 </section>

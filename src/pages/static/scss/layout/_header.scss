@@ -19,3 +19,14 @@
     background-position: bottom;
     position: relative;
 }
+
+.header-3{
+    height: 70rem;
+    background-image: linear-gradient(to bottom,
+    rgba($color-primary-light, 1), 
+    rgba($color-primary-dark, 0.9)), 
+    url(../img/blog-list-main.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
