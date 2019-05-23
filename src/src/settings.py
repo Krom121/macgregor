@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'taggit',
     'blog',
     'pages',
+    'sass_processor',
 ]
 
 
