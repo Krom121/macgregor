@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
 {% load static%}
-{% block header %}
-<header class="header-3">
+{% block header  %}
+<header class="header-2">
     <div class="text-box">
-        <h1 class="heading-primary">
-           <span class="heading-primary--main">Macgregor</span>
-           <span class="heading-primary--sub">Our Work</span>
-        </h1>
-    </div>
-</header>
+      <h1 class="heading-primary">
+         <span class="heading-primary-blog-main">Latest</span>
+         <span class="heading-primary-blog-sub">Blogs</span>
+      </h1>
+      </div>
+      {% if messages %}
+      <div class="messages">
+      <ul>
+      {% for message in messages %}
+      <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+      </ul>
+  </div>
+  {% endif %}
+  </header>
 {% endblock %}
 {% block content %}
 <section class="project-page">
