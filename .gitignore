@@ -6,4 +6,4 @@ db.sqlite3
 mac
 .bash_profile
 config.json
-local_settings
+local_settings.py
