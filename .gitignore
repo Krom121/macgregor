@@ -3,7 +3,7 @@ migrations
 __pycache__
 db.sqlite3
 .sass-cache
-mac
+env
 .bash_profile
 config.json
 local_settings.py
